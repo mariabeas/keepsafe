@@ -6,6 +6,7 @@
     <string name="edtUser">Usuario</string>
     <string name="edtPassword">Contraseña</string>
     <string name="box">Recordar datos</string>
+    <string name="btnRegistro">Registrarse</string>
 
     <!-- Strings del menú -->
     <string name="btnDatos">Datos personales</string>
@@ -13,6 +14,12 @@
     <string name="btnSMS">Enviar mensaje</string>
     <string name="btnUbicacion">Ubicación</string>
     <string name="btnInfo">Información</string>
+
+    <!-- Strings de la pantalla info -->
+    <string name="txtInfo">App de ayuda para gente con discapacidad auditiva</string>
+
+    <!-- Strings de la pantalla registro -->
+    <string name="btnAceptar">Aceptar</string>
 
 
 </resources>

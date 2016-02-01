@@ -33,10 +33,9 @@
         android:ems="10"
         android:id="@+id/edtPassword"
         android:text="@string/edtPassword"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/edtUser"
         android:layout_alignLeft="@+id/logo"
-        android:layout_alignStart="@+id/logo"
-        android:layout_marginBottom="46dp" />
+        android:layout_alignStart="@+id/logo" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -45,18 +44,27 @@
         android:text="@string/edtUser"
         android:ems="10"
         android:id="@+id/edtUser"
-        android:layout_above="@+id/edtPassword"
-        android:layout_alignRight="@+id/edtPassword"
-        android:layout_alignEnd="@+id/edtPassword" />
+        android:layout_below="@+id/btnInicio"
+        android:layout_alignLeft="@+id/edtPassword"
+        android:layout_alignStart="@+id/edtPassword" />
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/box"
         android:id="@+id/checkBox"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/edtPassword"
         android:layout_alignRight="@+id/btnInicio"
         android:layout_alignEnd="@+id/btnInicio" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnRegistro"
+        android:id="@+id/btnRegistro"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>
