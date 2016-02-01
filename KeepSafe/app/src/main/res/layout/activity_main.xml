@@ -9,8 +9,54 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.app.mariabeas.keepsafe.MainActivity">
 
-    <TextView
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/logo"
+        android:src="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="@string/btnInicio"
+        android:id="@+id/btnInicio"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/edtPassword"
+        android:text="@string/edtPassword"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/logo"
+        android:layout_alignStart="@+id/logo"
+        android:layout_marginBottom="46dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/edtUser"
+        android:ems="10"
+        android:id="@+id/edtUser"
+        android:layout_above="@+id/edtPassword"
+        android:layout_alignRight="@+id/edtPassword"
+        android:layout_alignEnd="@+id/edtPassword" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/box"
+        android:id="@+id/checkBox"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btnInicio"
+        android:layout_alignEnd="@+id/btnInicio" />
+
+
 </RelativeLayout>

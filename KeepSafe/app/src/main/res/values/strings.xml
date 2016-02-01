@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">KeepSafe</string>
+    <string name="app_name">Keep Safe</string>
+
+    <!-- Strings de la pantalla principal -->
+    <string name="btnInicio">Iniciar sesión</string>
+    <string name="edtUser">Usuario</string>
+    <string name="edtPassword">Contraseña</string>
+    <string name="box">Recordar datos</string>
+
+    <!-- Strings del menú -->
+    <string name="btnDatos">Datos personales</string>
+    <string name="btnAgenda">Agenda emergencias</string>
+    <string name="btnSMS">Enviar mensaje</string>
+    <string name="btnUbicacion">Ubicación</string>
+    <string name="btnInfo">Información</string>
+
+
 </resources>
