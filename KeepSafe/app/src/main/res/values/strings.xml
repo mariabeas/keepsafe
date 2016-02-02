@@ -21,5 +21,16 @@
     <!-- Strings de la pantalla registro -->
     <string name="btnAceptar">Aceptar</string>
 
+    <!-- Strings de la pantalla datos -->
+    <string name="edtNombre">Nombre</string>
+    <string name="edtApellido">Apellido</string>
+    <string name="edtFecha">Fecha de nacimiento</string>
+    <string name="edtSexo">Sexo</string>
+    <string name="edtSangre">Grupo sanguíneo</string>
+    <string name="edtNum">Num.Seguridad social</string>
+    <string name="btnCambiar">Cambiar contraseña</string>
+    <string name="btnFoto">Cambiar foto</string>
+    
+
 
 </resources>
