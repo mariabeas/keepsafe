@@ -57,7 +57,7 @@ public class DatosActivity extends AppCompatActivity {
             String num=((EditText)findViewById(R.id.edtNum)).getText().toString();
 
             //elementos vacios
-            if (nombre.equals("Nombre") || usuario.equals(null) || apellido.equals(null) ||
+            if (nombre.equals(null) || usuario.equals(null) || apellido.equals(null) ||
                     fecha.equals(null) || sexo.equals(null) || sangre.equals(null) || num.equals(null)) {
                 Toast.makeText(getApplicationContext(), "Completa los datos", Toast.LENGTH_SHORT).show();
             }else{

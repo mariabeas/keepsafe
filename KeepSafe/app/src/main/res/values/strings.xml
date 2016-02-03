@@ -32,9 +32,9 @@
     <string name="btnFoto">Cambiar foto</string>
 
     <!-- Strings de la pantalla datos -->
-    <string name="edtPassActual">Contraseña actual</string>
-    <string name="edtNuevaPass">Nueva contraseña</string>
-    <string name="edtConfiPass">Confirmar contraseña</string>
+    <string name="edtPassActual">Actual</string>
+    <string name="edtNuevaPass">Nueva </string>
+    <string name="edtConfiPass">Confirmar </string>
 
 
 

@@ -32,7 +32,7 @@
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/edtPassword"
-        android:text="@string/edtPassword"
+        android:hint="@string/edtPassword"
         android:layout_below="@+id/edtUser"
         android:layout_alignLeft="@+id/logo"
         android:layout_alignStart="@+id/logo" />
@@ -41,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="@string/edtUser"
+        android:hint="@string/edtUser"
         android:ems="10"
         android:id="@+id/edtUser"
         android:layout_below="@+id/btnInicio"

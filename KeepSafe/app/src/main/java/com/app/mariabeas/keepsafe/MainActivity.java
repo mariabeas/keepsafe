@@ -11,6 +11,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.google.android.gms.common.GooglePlayServicesUtil;
+
 public class MainActivity extends AppCompatActivity {
     ImageView logo;
     EditText edtUser;
@@ -21,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         //ELEMENTOS DE LA INTERFAZ
         Button btnInicio=(Button)findViewById(R.id.btnInicio);
         box=(CheckBox)findViewById(R.id.checkBox);
@@ -42,18 +43,18 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View v) {
             String usuario=((EditText)findViewById(R.id.edtUser)).getText().toString();
            String password=((EditText)findViewById(R.id.edtPassword)).getText().toString();
-           /* if(usuario.equals("admin")){
+           if(usuario.equals("admin")&&v.getId()==R.id.btnInicio){
                 Intent nuevoIntent=new Intent(MainActivity.this,MenuActivity.class);
                 startActivity(nuevoIntent);
 
             }else{
                 Toast.makeText(getApplicationContext(), "Usuario incorrecto", Toast.LENGTH_SHORT).show();
-            }*/
-            if(v.getId()==R.id.btnInicio) {
+            }
+           /* if(v.getId()==R.id.btnInicio) {
                 //PARA PASAR DE UNA PANTALLA A OTRA
                 Intent intentactivity = new Intent(MainActivity.this, MenuActivity.class);
                 startActivity(intentactivity);
-            }
+            }*/
 
 
             }

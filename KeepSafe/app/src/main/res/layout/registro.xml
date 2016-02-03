@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="@string/edtUser"
+        android:hint="@string/edtUser"
         android:ems="10"
         android:id="@+id/edtUsuario"
         android:layout_gravity="center_horizontal"
@@ -37,7 +37,6 @@
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/edtPass"
-        android:text="@string/edtPassword"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:layout_marginTop="20dp" />

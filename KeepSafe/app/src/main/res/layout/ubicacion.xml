@@ -9,6 +9,9 @@
         android:id="@+id/logo"
         android:src="@drawable/logo"
         android:layout_gravity="right" />
-
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/miMapa"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"></com.google.android.gms.maps.MapView>
 
 </LinearLayout>
