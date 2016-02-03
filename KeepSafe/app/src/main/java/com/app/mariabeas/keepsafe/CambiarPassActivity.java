@@ -5,38 +5,43 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 /**
  * Created by Maria on 02/02/2016.
  */
-public class RegistroActivity extends AppCompatActivity {
+public class CambiarPassActivity extends AppCompatActivity {
     ImageView logo;
-    ImageView avatar;
-    EditText edtUsuario;
-    EditText edtPass;
+    ImageView candado;
+    TextView passActual;
+    TextView nuevaPass;
+    TextView confirPass;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.registro);
+        setContentView(R.layout.cambiar_password);
+
         //ELEMENTOS DE LA INTERFAZ
         logo=(ImageView)findViewById(R.id.logo);
-        avatar=(ImageView)findViewById(R.id.candado);
-        edtUsuario=(EditText)findViewById(R.id.edtUsuario);
-        edtPass=(EditText)findViewById(R.id.edtPass);
+        candado=(ImageView)findViewById(R.id.candado);
         Button btnAceptar=(Button)findViewById(R.id.btnAceptar);
+        passActual=(TextView)findViewById(R.id.edtPassActual);
+        nuevaPass=(TextView)findViewById(R.id.edtNuevaPass);
+        confirPass=(TextView)findViewById(R.id.edtConfirPass);
 
         MiListener listener=new MiListener();
         btnAceptar.setOnClickListener(listener);
     }
-    //clase privada para implementar la funcionalidad de los botones de la activity
     private class MiListener implements View.OnClickListener{
+
+        @Override
         public void onClick(View v) {
-            if(v.getId()==R.id.btnAgenda) {
+            if(v.getId()==R.id.btnDatos) {
                 //PARA PASAR DE UNA PANTALLA A OTRA
-                Intent intentactivity = new Intent(RegistroActivity.this, MenuActivity.class);
+                Intent intentactivity = new Intent(CambiarPassActivity.this, MainActivity.class);
                 startActivity(intentactivity);
             }
+
 
         }
     }

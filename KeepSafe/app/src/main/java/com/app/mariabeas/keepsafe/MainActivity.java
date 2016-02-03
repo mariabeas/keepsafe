@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             String usuario=((EditText)findViewById(R.id.edtUser)).getText().toString();
-           // String password=((EditText)findViewById(R.id.edtPassword).)
+           String password=((EditText)findViewById(R.id.edtPassword)).getText().toString();
            /* if(usuario.equals("admin")){
                 Intent nuevoIntent=new Intent(MainActivity.this,MenuActivity.class);
                 startActivity(nuevoIntent);

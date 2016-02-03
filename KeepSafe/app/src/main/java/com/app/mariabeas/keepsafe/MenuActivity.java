@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 /**
@@ -24,6 +26,22 @@ public class MenuActivity extends AppCompatActivity {
         Button btnSMS=(Button)findViewById(R.id.btnSMS);
         Button btnUbicacion=(Button)findViewById(R.id.btnUbicacion);
         Button btnInfo=(Button)findViewById(R.id.btnInfo);
+
+        MiListener listener=new MiListener();
+        btnDatos.setOnClickListener(listener);
+    }
+    private class MiListener implements View.OnClickListener{
+
+        @Override
+        public void onClick(View v) {
+            if(v.getId()==R.id.btnDatos) {
+                //PARA PASAR DE UNA PANTALLA A OTRA
+                Intent intentactivity = new Intent(MenuActivity.this, DatosActivity.class);
+                startActivity(intentactivity);
+            }
+
+
+        }
     }
 
 }

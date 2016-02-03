@@ -16,7 +16,7 @@
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:id="@+id/avatar"
+        android:id="@+id/candado"
         android:src="@drawable/avatar"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
@@ -41,7 +41,8 @@
         android:id="@+id/edtNombre"
         android:layout_above="@+id/edtApellido"
         android:layout_alignLeft="@+id/edtApellido"
-        android:layout_alignStart="@+id/edtApellido" />
+        android:layout_alignStart="@+id/edtApellido"
+        android:hint="Nombre" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -112,6 +113,6 @@
         android:layout_height="wrap_content"
         android:text="@string/btnFoto"
         android:id="@+id/btnFoto"
-        android:layout_below="@+id/avatar"
+        android:layout_below="@+id/candado"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>

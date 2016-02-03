@@ -2,34 +2,20 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.app.mariabeas.keepsafe">
 
-    <!-- Permisos para google maps
-   <permission
-        android:name="com.app.mariabeas.keepsafe"
-        android:protectionLevel="signature"/>
-    <uses-permission
-        android:name="com.app.mariabeas.keepsafe"/>
-    <uses-permission
-        android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>-->
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <uses-library android:name="com.google.android.maps" />
+
         <!-- Pantalla principal -->
         <activity android:name=".MainActivity">
-           <!-- <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            <!-- <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>-->
         </activity>
 
         <!-- Pantalla del menu-->
@@ -59,15 +45,10 @@
             </intent-filter>
         </activity>
 
-
-      <!-- <meta-data
-           android:name="com.google.android.gms.version"
-           android:value="@integer/google_play_services_version"/>
-        <meta-data
-            android:name="com.google.android.maps.V2.API_KEY"
-            android:value="AIzaSyBdhADGONI-E-YD8PKQMl3ruFIKWbdk0Fg"/>-->
-
+        <!-- Pantalla de cambiar contraseña-->
+        <activity android:name=".CambiarPassActivity"
+            android:label="@string/app_name">
+        </activity>
     </application>
-
 
 </manifest>

@@ -3,7 +3,7 @@
 
     <!-- Strings de la pantalla principal -->
     <string name="btnInicio">Iniciar sesión</string>
-    <string name="edtUser">Usuario</string>
+    <string name="edtUser">Email</string>
     <string name="edtPassword">Contraseña</string>
     <string name="box">Recordar datos</string>
     <string name="btnRegistro">Registrarse</string>
@@ -30,7 +30,12 @@
     <string name="edtNum">Num.Seguridad social</string>
     <string name="btnCambiar">Cambiar contraseña</string>
     <string name="btnFoto">Cambiar foto</string>
-    
+
+    <!-- Strings de la pantalla datos -->
+    <string name="edtPassActual">Contraseña actual</string>
+    <string name="edtNuevaPass">Nueva contraseña</string>
+    <string name="edtConfiPass">Confirmar contraseña</string>
+
 
 
 </resources>
