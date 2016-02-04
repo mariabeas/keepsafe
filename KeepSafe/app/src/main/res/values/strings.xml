@@ -20,6 +20,7 @@
 
     <!-- Strings de la pantalla registro -->
     <string name="btnAceptar">Aceptar</string>
+    <string name="edtConfiPass">Contraseña</string>
 
     <!-- Strings de la pantalla datos -->
     <string name="edtNombre">Nombre</string>
@@ -31,10 +32,10 @@
     <string name="btnCambiar">Cambiar contraseña</string>
     <string name="btnFoto">Cambiar foto</string>
 
-    <!-- Strings de la pantalla datos -->
+    <!-- Strings de la pantalla cambiar contraseña -->
     <string name="edtPassActual">Actual</string>
     <string name="edtNuevaPass">Nueva </string>
-    <string name="edtConfiPass">Confirmar </string>
+    <string name="edtConfirmarPass">Confirmar </string>
 
 
 

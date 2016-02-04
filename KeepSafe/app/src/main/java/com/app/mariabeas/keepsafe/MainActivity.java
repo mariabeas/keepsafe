@@ -19,12 +19,20 @@ public class MainActivity extends AppCompatActivity {
     EditText edtPassword;
     CheckBox box;
 
+    LoginDataBaseAdapter loginDBAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Crear una instancia de SQLiteDataBase
+        loginDBAdapter=new LoginDataBaseAdapter(this);
+        loginDBAdapter=loginDBAdapter.open();
+
         //ELEMENTOS DE LA INTERFAZ
         Button btnInicio=(Button)findViewById(R.id.btnInicio);
+        Button btnRegistro=(Button)findViewById(R.id.btnRegistro);
         box=(CheckBox)findViewById(R.id.checkBox);
         edtUser=(EditText)findViewById(R.id.edtUser);
         edtPassword=(EditText)findViewById(R.id.edtPassword);
@@ -32,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
         MiListener listener=new MiListener();
         btnInicio.setOnClickListener(listener);
-
+        btnRegistro.setOnClickListener(listener);
 
     }
 
@@ -41,9 +49,26 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onClick(View v) {
-            String usuario=((EditText)findViewById(R.id.edtUser)).getText().toString();
-           String password=((EditText)findViewById(R.id.edtPassword)).getText().toString();
-           if(usuario.equals("admin")&&v.getId()==R.id.btnInicio){
+            String user=edtUser.getText().toString();
+            String contra=edtPassword.getText().toString();
+            String storedPassword=loginDBAdapter.getSingleEntry(user);
+            if(v.getId()==R.id.btnInicio) {
+                if (contra.equals(storedPassword)) {
+                    Toast.makeText(getApplicationContext(), "Inicio de sesión correcto", Toast.LENGTH_LONG).show();
+                    //PASAR A LA SIGUIENTE PANTALLA
+                    Intent nuevoIntent = new Intent(MainActivity.this, MenuActivity.class);
+                    startActivity(nuevoIntent);
+                } else {
+                    Toast.makeText(getApplicationContext(), "Email o contraseña incorrectos", Toast.LENGTH_SHORT).show();
+                }
+            }else{
+                if(v.getId()==R.id.btnRegistro) {
+                    //PARA PASAR DE UNA PANTALLA A OTRA
+                    Intent intentactivity = new Intent(MainActivity.this, RegistroActivity.class);
+                    startActivity(intentactivity);
+                }
+            }
+          /* if(user.equals("admin")&&v.getId()==R.id.btnInicio){
                 Intent nuevoIntent=new Intent(MainActivity.this,MenuActivity.class);
                 startActivity(nuevoIntent);
 
@@ -58,5 +83,12 @@ public class MainActivity extends AppCompatActivity {
 
 
             }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        //CERRAR LA DB
+        loginDBAdapter.close();
     }
 }

@@ -35,7 +35,8 @@
         android:hint="@string/edtPassword"
         android:layout_below="@+id/edtUser"
         android:layout_alignLeft="@+id/logo"
-        android:layout_alignStart="@+id/logo" />
+        android:layout_alignStart="@+id/logo"
+        android:text="@string/edtPassword" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -46,7 +47,8 @@
         android:id="@+id/edtUser"
         android:layout_below="@+id/btnInicio"
         android:layout_alignLeft="@+id/edtPassword"
-        android:layout_alignStart="@+id/edtPassword" />
+        android:layout_alignStart="@+id/edtPassword"
+        android:text="@string/edtUser" />
 
     <CheckBox
         android:layout_width="wrap_content"
